@@ -28,4 +28,7 @@ pl = st.number_input("Petal length (cm)")
 pw = st.number_input("Petal width (cm)")
 
 st.write(predict(sl, sw, pl, pw))
+st.text_area(label ="Prediction",value=predict(sl, sw, pl, pw), height =50)
+
+
 
