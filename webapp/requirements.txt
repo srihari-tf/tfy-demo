@@ -1,3 +1,4 @@
 uvicorn==0.18.3
 mlfoundry==0.3.34
 scikit-learn==1.1.2
+streamlit
