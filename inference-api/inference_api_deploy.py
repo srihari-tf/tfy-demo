@@ -28,4 +28,5 @@ service = Service(
     ports=[{"port": 8000}],
     env=env,
 )
+
 deployment = service.deploy(workspace_fqn="v1:local:qaifi-workspace")
