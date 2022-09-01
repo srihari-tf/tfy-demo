@@ -2,7 +2,7 @@ import os
 
 import mlfoundry
 import pandas as pd
-import strealmit as st
+import streamlit as st
 
 @st.cache()
 def load_model():
