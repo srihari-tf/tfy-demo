@@ -28,7 +28,7 @@ def predict(sepal_length: float, sepal_width: float, petal_length: float, petal_
     )
     return target_names[int(model.predict(pd.DataFrame([data]))[0])]
 
-st.title('Iris Flower Classification')
+st.title('Identify the Iris plant')
 
 sl = st.number_input("Sepal length (cm)")
 sw = st.number_input("Sepal width (cm)")
