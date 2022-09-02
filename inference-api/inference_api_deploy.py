@@ -29,4 +29,4 @@ service = Service(
     env=env,
 )
 
-deployment = service.deploy(workspace_fqn="v1:local:qaifi-workspace")
+deployment = service.deploy(workspace_fqn="v1:local:demo-workspace")

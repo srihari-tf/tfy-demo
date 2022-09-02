@@ -4,7 +4,8 @@ from servicefoundry import (
     Build,
     Job,
     PythonBuild,
-    ManualTrigger
+    ManualTrigger,
+    ScheduledTrigger
 )
 
 logging.basicConfig(level=logging.INFO)
@@ -24,10 +25,10 @@ env = [
 ]
 
 job = Job(
-    name="training-job",
+    name="training-cron",
     image=image,
     env=env,
-    trigger=ManualTrigger(run=True)
+    trigger=ScheduledTrigger(schedule='0 8 * * *')
 )
 
 job.deploy(workspace_fqn="v1:local:demo-workspace")
